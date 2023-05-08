@@ -17,12 +17,12 @@ export default function Login() {
       "user-read-playback-position",
       "user-top-read",
     ];
-    window.location.href = `${apiUrl}?clientId=${clientId}&redirect_Url=${redirect_Url}&scopes=${scopes.join(
+    window.location.href = `${apiUrl}?client_id=${clientId}&redirect_uri=${redirect_Url}&scope=${scope.join(
       " "
      )}&response_type=token&show_dailog=true`;
   };
   return (
-    <container className='container'>
+    <container className='login'>
       <img src={img} alt=''/>
       <button onClick={handleClick}>Connect Spotify</button>
     </container>
