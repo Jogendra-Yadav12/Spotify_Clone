@@ -7,7 +7,7 @@ import Playlist from './Playlist'
 
 export default function Sidebar() {
   return (
-    <container className="sidebar">
+    <div className="sidebar">
         <div className='top_links'>
             <div className='logo'>
                 <img src={logo} alt='' />
@@ -19,6 +19,6 @@ export default function Sidebar() {
             </ul>
         </div>
         <Playlist/>
-    </container>
+    </div>
   )
 }
